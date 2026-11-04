@@ -9,11 +9,11 @@ GitHub에서 공개 저장소 `dev1-workstation`을 생성합니다. README와 .
 ```powershell
 Set-Location C:\dev\dev1-workstation
 git init -b main
-git config user.name "YOUR NAME"
-git config user.email "YOUR EMAIL"
+git config user.name "sunnybyeol"
+git config user.email "witch_jh@naver.com"
 git add README.md .gitignore main.py quiz_game.py storage.py state.json docs
 git commit -m "chore: create Python quiz project"
-git remote add origin https://github.com/YOUR_ACCOUNT/dev1-workstation.git
+git remote add origin https://github.com/sunnybyeol/dev1-workstation.git
 git push -u origin main
 ```
 
