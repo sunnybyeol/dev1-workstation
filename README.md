@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python Basics Quiz
 
 ## 1. 프로젝트 소개
@@ -78,3 +79,7 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 
 화면 캡처와 원격 저장소 기록은 실제 실행/업로드 후 추가해야 합니다.
 
+=======
+# dev1-workstation
+mission 2
+>>>>>>> d1eceed3a8eea6021850d696acfd8255f6eddbdf
