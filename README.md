@@ -76,10 +76,7 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 
 - 메뉴, 퀴즈 풀이, 문제 추가, 문제 목록, 점수 화면 캡처: [docs/screenshots/README.md](docs/screenshots/README.md)
 - 개발 환경과 Python 버전 확인 기록
-Python 연결-[docs/screenshots/1connect.png](docs/screenshots/1connect.png)
-
-[Python 버전](docs/screenshots/2version.png)
-[Git 브랜치](docs/screenshots/3gitbranch.png)
+[Python 연결](docs/screenshots/1connect.png) , [Python 버전](docs/screenshots/2version.png) , [Git 브랜치](docs/screenshots/3gitbranch.png)
 
 - `git log --oneline --graph` 결과와 브랜치 병합 기록
 - GitHub 저장소 링크 및 실제 push 기록
