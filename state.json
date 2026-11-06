@@ -1,3 +1,4 @@
+<<<<<<< origin/main
 {
   "quizzes": [
     {
@@ -93,3 +94,100 @@
   ],
   "best_score": 7
 }
+=======
+{
+  "quizzes": [
+    {
+      "question": "Python에서 함수를 정의할 때 사용하는 키워드는 무엇인가요?",
+      "choices": [
+        "func",
+        "def",
+        "function",
+        "make"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "len([3, 5, 7])의 결과는 무엇인가요?",
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "Python의 참 값을 나타내는 값은 무엇인가요?",
+      "choices": [
+        "true",
+        "TRUE",
+        "True",
+        "1True"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "Python 리스트의 첫 번째 인덱스는 무엇인가요?",
+      "choices": [
+        "-1",
+        "0",
+        "1",
+        "인덱스가 없습니다"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "키와 값의 쌍을 저장하는 기본 자료형은 무엇인가요?",
+      "choices": [
+        "list",
+        "tuple",
+        "dict",
+        "set"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "range(3)이 만드는 값은 무엇인가요?",
+      "choices": [
+        "1, 2, 3",
+        "0, 1, 2",
+        "0, 1, 2, 3",
+        "3"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "예외를 처리할 때 사용하는 키워드는 무엇인가요?",
+      "choices": [
+        "catch",
+        "except",
+        "error",
+        "finally"
+      ],
+      "answer": 2
+    },
+    {
+      "question": "이 프로그램이 진행 정보를 저장하는 파일 형식은 무엇인가요?",
+      "choices": [
+        "CSV",
+        "XML",
+        "JSON",
+        "HTML"
+      ],
+      "answer": 3
+    },
+    {
+      "question": "다음 중 파이썬에서 \"수정 불가능한(Immutable)\" 자료형은 무엇인가요?",
+      "choices": [
+        "리스트(List)",
+        "딕셔너리(Dictionary)",
+        "듀플(Tuple)",
+        "세트(Set)"
+      ],
+      "answer": 3
+    }
+  ],
+  "best_score": 7
+}
+>>>>>>> origin/main
