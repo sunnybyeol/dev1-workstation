@@ -2,6 +2,8 @@
 
 - `menu.png`: 시작 메뉴와 1~5번 선택지
 [docs/srceenshots/menu.png](menu.png)
+<img width="846" height="274" alt="menu" src="https://github.com/user-attachments/assets/34aaa386-91f9-4dc4-8c39-41dcfb89569a" />
+
 - `play.png`: 질문, 선택지, 정답 결과, 최종 점수
 [docs/screenshots/play.png](play.png), [docs/screenshots/play.png](play1.png)
 - `add-quiz.png`: 문제 추가 성공 안내
