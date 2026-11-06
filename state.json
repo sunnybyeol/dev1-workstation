@@ -79,7 +79,17 @@
         "HTML"
       ],
       "answer": 3
+    },
+    {
+      "question": "다음 중 파이썬에서 \"수정 불가능한(Immutable)\" 자료형은 무엇인가요?",
+      "choices": [
+        "리스트(List)",
+        "딕셔너리(Dictionary)",
+        "듀플(Tuple)",
+        "세트(Set)"
+      ],
+      "answer": 3
     }
   ],
-  "best_score": 5
+  "best_score": 7
 }

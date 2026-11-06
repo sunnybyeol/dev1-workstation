@@ -17,7 +17,6 @@ git remote add origin https://github.com/sunnybyeol/dev1-workstation.git
 git push -u origin main
 ```
 
-계정의 실제 이름/이메일과 GitHub URL로 `YOUR NAME`, `YOUR EMAIL`, `YOUR_ACCOUNT`를 바꿉니다. 비밀번호나 토큰은 코드/README/로그에 쓰지 않습니다.
 
 ## 2. 최소 10개의 의미 있는 커밋
 
@@ -61,7 +60,7 @@ git log --oneline --graph --decorate --all
 
 ```powershell
 Set-Location C:\dev
-git clone https://github.com/YOUR_ACCOUNT/dev1-workstation.git dev1-workstation-clone
+git clone https://github.com/sunnybyeol/dev1-workstation.git dev1-workstation-clone
 Set-Location C:\dev\dev1-workstation-clone
 ```
 
