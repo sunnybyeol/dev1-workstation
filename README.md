@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Python Basics Quiz
 
 ## 1. 프로젝트 소개
@@ -10,7 +10,7 @@
 ## 2. 실행 환경
 
 - Python 3.10 이상
-- Windows PowerShell, macOS 터미널 또는 Linux 셸
+- Windows PowerShell, 터미널 또는 Linux 셸, vscode
 - 외부 패키지 설치 없음 (Python 표준 라이브러리만 사용)
 
 ## 3. 실행 방법
@@ -68,17 +68,23 @@ dev1-workstation/
 
 ## 6. Git 작업 기록
 
+
+
 GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의미 있는 커밋, 기능 브랜치 병합, 저장소 clone과 pull 과정을 수행해야 합니다. 실제 사용자 계정과 원격 저장소가 필요한 단계는 [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md)의 순서에 적어 두었습니다. 커밋/푸시를 실행했다고 가장하지 않으며, GitHub 주소와 로그 증거는 실제 수행 후 여기에 추가합니다.
 
 ## 7. 제출 전에 남길 증거
 
 - 메뉴, 퀴즈 풀이, 문제 추가, 문제 목록, 점수 화면 캡처: [docs/screenshots/README.md](docs/screenshots/README.md)
 - 개발 환경과 Python 버전 확인 기록
+
+
 - `git log --oneline --graph` 결과와 브랜치 병합 기록
 - GitHub 저장소 링크 및 실제 push 기록
 
 화면 캡처와 원격 저장소 기록은 실제 실행/업로드 후 추가해야 합니다.
-
+(docs/screenshots/1connect.png)
+(docs/screenshots/2version.png)
+(docs/screenshots/3gitbranch.png)
 =======
 # dev1-workstation
 mission 2

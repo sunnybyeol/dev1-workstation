@@ -61,7 +61,7 @@ git log --oneline --graph --decorate --all
 
 ```powershell
 Set-Location C:\dev
-git clone https://github.com/YOUR_ACCOUNT/dev1-workstation.git dev1-workstation-clone
+git clone https://github.com/sunnybyeol/dev1-workstation.git dev1-workstation-clone
 Set-Location C:\dev\dev1-workstation-clone
 ```
 
