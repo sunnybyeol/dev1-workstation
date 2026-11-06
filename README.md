@@ -88,15 +88,15 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 
 ##실행화면
 
-#퀴즈 실행화면
+1. 퀴즈 실행화면
 [docs/srceenshots/menu.png](docs/screenshots/menu.png)
-###퀴즈 풀기
+2. 퀴즈 풀기
 [docs/screenshots/play.png](docs/screenshots/play.png), [docs/screenshots/play.png](docs/screenshot/play1.png)
-###퀴즈 추가
+3. 퀴즈 추가
 [docs/screenshots/add-quiz.png](docs/screenshots/add-quiz.png)
-###퀴즈 목록
+4.퀴즈 목록
 [docs/screenshots/quiz-list.png](docs/screenshots/quiz-list.png)
-###점수 확인
+5.점수 확인
 [docs/restart-persistencescreenshots/score.png](docs/screenshots/score.png)
 ###종료 후 재시작 점수 남아있는지 확인
 [docs/screenshots/score.png](docs/screenshots/restart-persistence.png)
