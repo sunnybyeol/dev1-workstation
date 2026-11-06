@@ -3,7 +3,7 @@
 실제 프로그램을 실행하고 터미널에서 캡처하세요. 예시 화면이나 임의 이미지를 성공 증거로 사용하지 않습니다. 캡처 파일은 이 폴더에 PNG로 저장합니다.
 
 - `menu.png`: 시작 메뉴와 1~5번 선택지
-[docs/srceenshots/menu.png](docs/screenshots/menu.png)
+[docs/srceenshots/menu.png](menu.png)
 - `play.png`: 질문, 선택지, 정답 결과, 최종 점수
 [docs/screenshots/play.png](docs/screenshots/play.png), [docs/screenshots/play.png](docs/screenshots/play1.png)
 - `add-quiz.png`: 문제 추가 성공 안내
