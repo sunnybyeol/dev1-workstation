@@ -88,7 +88,7 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 
 ##실행화면
 
-###퀴즈 실행화면
+#퀴즈 실행화면
 [docs/srceenshots/menu.png](docs/screenshots/menu.png)
 ###퀴즈 풀기
 [docs/screenshots/play.png](docs/screenshots/play.png), [docs/screenshots/play.png](docs/screenshot/play1.png)
