@@ -82,9 +82,26 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 - GitHub 저장소 링크 및 실제 push 기록
 
 화면 캡처와 원격 저장소 기록은 실제 실행/업로드 후 추가해야 합니다.
-(docs/screenshots/1connect.png)
-(docs/screenshots/2version.png)
-(docs/screenshots/3gitbranch.png)
+### Python 연결
+[docs/srceenshots/1connect.png](docs/screenshots/1connect.png)
+[docs/srceenshots/2version.png](docs/screenshots/2version.png)
+[docs/srceenshots/3gitbranch.png](docs/screenshots/3gitbranch.png)
+
+## 실행화면
+
+### 퀴즈 실행화면
+[docs/srceenshots/menu.png](docs/screenshots/menu.png)
+### 퀴즈 풀기
+[docs/screenshots/play.png](docs/screenshots/play.png), [docs/screenshots/play.png](docs/screenshots/play1.png)
+### 퀴즈 추가
+[docs/screenshots/add-quiz.png](docs/screenshots/add-quiz.png)
+### 퀴즈 목록
+[docs/screenshots/quiz-list.png](docs/screenshots/quiz-list.png)
+### 점수 확인
+[docs/restart-persistencescreenshots/score.png](docs/screenshots/score.png)
+### 종료 -> 재시작 -> 점수 남아있는지 확인
+[docs/screenshots/score.png](docs/screenshots/restart-persistence.png)
+### 종료
 =======
 # dev1-workstation
 mission 2
