@@ -53,6 +53,14 @@ class QuizGame:
     def add_quiz(self, question: str, choices: list[str], answer: int) -> None:
         self.quizzes.append(Quiz(question, choices, answer))
 
+    def delete_quiz(self, number: int) -> Quiz:
+        """Delete and return a quiz using its 1-based position in the list."""
+        if isinstance(number, bool) or not isinstance(number, int):
+            raise ValueError("Quiz number must be an integer.")
+        if not 1 <= number <= len(self.quizzes):
+            raise ValueError("Quiz number is outside the available range.")
+        return self.quizzes.pop(number - 1)
+
     def record_score(self, score: int) -> bool:
         """Save a new high score and return whether it is a record."""
         self.last_score = score
