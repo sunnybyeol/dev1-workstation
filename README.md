@@ -81,6 +81,11 @@ GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의�
 
 화면 캡처와 원격 저장소 기록은 실제 실행/업로드 후 추가해야 합니다.
 ### 8. Python 연결 및 실행
+
+<img width="846" height="274" alt="3gitbranch" src="https://github.com/user-attachments/assets/0d6dc9f4-fed5-4adc-a69c-adc2c57a3922" />
+<img width="1037" height="54" alt="2version" src="https://github.com/user-attachments/assets/fb1c63c7-728b-43b1-ada8-19f1ffc4c227" />
+<img width="1139" height="716" alt="1connect" src="https://github.com/user-attachments/assets/1fdf6d5d-abda-484c-9e1d-0c487dc72db6" />
+
 [docs/srceenshots/1connect.png](docs/screenshots/1connect.png),
 [docs/srceenshots/2version.png](docs/screenshots/2version.png),
 [docs/srceenshots/3gitbranch.png](docs/screenshots/3gitbranch.png)
