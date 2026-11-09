@@ -1,4 +1,4 @@
-<<<<<<< origin/main
+
 
 # Python Basics Quiz
 
