@@ -4,7 +4,7 @@
 
 ## 1. 저장소 생성과 첫 push
 
-GitHub에서 공개 저장소 `dev1-workstation`을 생성합니다. README와 .gitignore를 GitHub에서 미리 만들지 않도록 설정한 뒤 PowerShell에서 실행합니다.
+GitHub에서 공개 저장소 `dev1-workstation`을 생성. README와 .gitignore를 GitHub에서 미리 만들지 않도록 설정한 뒤 PowerShell에서 실행.
 
 ```powershell
 Set-Location C:\dev\dev1-workstation
@@ -71,4 +71,4 @@ git pull origin main
 git log -1 --oneline
 ```
 
-clone 경로, pull 전후 상태와 실제 출력, 브랜치 병합 그래프를 제출용 README 또는 `docs/`의 기록에 추가합니다.
+clone 경로, pull 전후 상태와 실제 출력, 브랜치 병합 그래프를 제출용 README 또는 `docs/`의 기록에 추가.
