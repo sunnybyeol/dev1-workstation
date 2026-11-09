@@ -45,7 +45,8 @@ def show_menu() -> None:
     print("2. 퀴즈 추가")
     print("3. 퀴즈 목록 보기")
     print("4. 점수 확인")
-    print("5. 종료")
+    print("5. 퀴즈 삭제")
+    print("6. 종료")
 
 
 def play_quiz(game: QuizGame) -> None:
@@ -95,6 +96,24 @@ def list_quizzes(game: QuizGame) -> None:
             print(f"   {choice_number}. {choice}{marker}")
 
 
+def delete_quiz(game: QuizGame) -> None:
+    if not game.quizzes:
+        print("삭제할 문제가 없습니다.")
+        return
+
+    print("\n삭제할 퀴즈를 선택하세요. 취소하려면 0을 입력하세요.")
+    for number, quiz in enumerate(game.quizzes, start=1):
+        print(f"{number}. {quiz.question}")
+
+    selection = ask_number("삭제할 문제 번호: ", 0, len(game.quizzes))
+    if selection == 0:
+        print("삭제를 취소했습니다.")
+        return
+
+    removed = game.delete_quiz(selection)
+    print(f"퀴즈를 삭제했습니다: {removed.question}")
+
+
 def show_score(game: QuizGame) -> None:
     print(f"최고 점수: {game.best_score}")
     print(f"최근 점수: {game.last_score}")
@@ -113,13 +132,14 @@ def run() -> None:
         2: lambda: add_quiz(game),
         3: lambda: list_quizzes(game),
         4: lambda: show_score(game),
+        5: lambda: delete_quiz(game),
     }
 
     try:
         while True:
             show_menu()
-            selection = ask_number("메뉴 선택 (1-5): ", 1, 5)
-            if selection == 5:
+            selection = ask_number("메뉴 선택 (1-6): ", 1, 6)
+            if selection == 6:
                 break
             actions[selection]()
             save_game(game)
