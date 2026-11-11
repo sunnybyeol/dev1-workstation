@@ -12,6 +12,11 @@
 - Windows PowerShell, 터미널 또는 Linux 셸, vscode
 - 외부 패키지 설치 없음 (Python 표준 라이브러리만 사용)
 
+```powershell
+py --version
+```
+[version 확인](docs/screenshots/2version.png)
+
 ## 3. 실행 방법
 
 PowerShell에서 이 저장소 폴더로 이동해 실행합니다.
