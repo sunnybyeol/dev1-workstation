@@ -15,7 +15,6 @@
 ```powershell
 py --version
 ```
-[version 확인](docs/screenshots/2version.png)
 
 ## 3. 실행 방법
 
