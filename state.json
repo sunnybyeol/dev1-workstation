@@ -89,7 +89,17 @@
         "세트(Set)"
       ],
       "answer": 3
+    },
+    {
+      "question": "len([10, 20, 30, 40])의 실행 결과는 무엇일까요?",
+      "choices": [
+        "1",
+        "4",
+        "10",
+        "40"
+      ],
+      "answer": 2
     }
   ],
-  "best_score": 7
+  "best_score": 10
 }

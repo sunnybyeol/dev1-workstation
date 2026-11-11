@@ -1,5 +1,3 @@
-
-
 # Python Basics Quiz
 
 ## 1. 프로젝트 소개
@@ -56,6 +54,8 @@ dev1-workstation/
 ├── .gitignore               # 캐시 등 불필요 파일 제외
 └── docs/
     ├── GIT_WORKFLOW.md       # 브랜치, 커밋, clone/pull 제출 절차
+    ├── WORK_LOG.md           # 실행·검증 증거 기록 안내
+    ├── 미션_목표_설명.hwp     # 과제 목표와 요구사항 설명
     └── screenshots/
         └── README.md         # 실제 화면 캡처 체크리스트
 ```
@@ -69,18 +69,32 @@ dev1-workstation/
 
 `state.json`은 프로젝트 루트에 생성됩니다. `quizzes` 배열 안에 각 질문과 선택지, 정답 번호를 저장하고 `best_score`에 최고 점수를 저장합니다. 문제를 추가하거나 삭제하면 변경 내용이 저장됩니다. 저장은 UTF-8로 하고 임시 파일을 쓴 뒤 교체해 중간 저장 중 데이터 손상 가능성을 줄였습니다.
 
-## 6. Git 작업 기록
+## 6. 보너스 기능 현황
 
-GitHub 저장소를 만들고 로컬 변경을 올린 뒤, 최소 10개의 의미 있는 커밋, 기능 브랜치 병합, 저장소 clone과 pull 과정을 수행해야 합니다. 실제 사용자 계정과 원격 저장소가 필요한 단계는 [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md)의 순서에 적어 두었습니다. 커밋/푸시를 실행했다고 가장하지 않으며, GitHub 주소와 로그 증거는 실제 수행 후 여기에 추가합니다.
+현재 구현한 보너스 기능은 **퀴즈 삭제**입니다. 5번 메뉴에서 삭제할 문제 번호를 선택하며, `0`을 입력하면 취소합니다. 삭제 결과는 `state.json`에 저장됩니다. 랜덤 출제, 문제 수 선택, 힌트, 점수 기록 히스토리는 추가 선택 기능이며 현재 구현하지 않았습니다.
 
-## 7. 제출 전에 남길 증거
+## 7. 실행 화면과 증거
 
-- 메뉴, 퀴즈 풀이, 문제 추가, 문제 목록, 점수 화면 캡처: [docs/screenshots/README.md](docs/screenshots/README.md)
-- 개발 환경과 Python 버전 확인 기록
-- `git log --oneline --graph` 결과와 브랜치 병합 기록
-- GitHub 저장소 링크 및 실제 push 기록
+캡처 파일은 모두 [docs/screenshots/](docs/screenshots/)에 저장되어 있습니다.
 
-실행 캡처와 Git 작업 증거는 [docs/screenshots/README.md](docs/screenshots/README.md)에서 확인할 수 있습니다. 퀴즈 삭제 화면 캡처는 기능 실행 후 추가합니다.
-## 8. 보너스 기능 현황
+- 메뉴: [menu.png](docs/screenshots/menu.png) (삭제 메뉴를 추가하기 전의 1~5 메뉴 화면입니다. 최신 메뉴 캡처는 필요합니다.)
+- 퀴즈 풀이: [play.png](docs/screenshots/play.png), [play1.png](docs/screenshots/play1.png)
+- 퀴즈 추가: [add-quiz.png](docs/screenshots/add-quiz.png)
+- 퀴즈 목록: [quiz-list.png](docs/screenshots/quiz-list.png)
+- 점수 확인: [score.png](docs/screenshots/score.png), [restart-persistence.png](docs/screenshots/restart-persistence.png)
+- 잘못된 입력: [quiz-error.png](docs/screenshots/quiz-error.png) (기존 1~5 메뉴 기준 화면입니다.)
+- Git 브랜치/clone/pull: [branchlist.png](docs/screenshots/branchlist.png), [clone.png](docs/screenshots/clone.png), [clonelist.png](docs/screenshots/clonelist.png), [pull.png](docs/screenshots/pull.png)
+- 개발 환경: [2version.png](docs/screenshots/2version.png)
 
-현재 구현된 보너스 기능은 **퀴즈 삭제**입니다. 삭제할 문제 번호를 입력하면 목록에서 제거하고 `state.json`에 반영합니다. `0`을 입력하면 삭제를 취소할 수 있습니다. 랜덤 출제, 문제 수 선택, 힌트, 점수 기록 히스토리는 아직 구현하지 않았습니다.
+문제 삭제와 삭제 후 재실행 화면 캡처는 아직 없습니다. 캡처 체크리스트는 [docs/screenshots/README.md](docs/screenshots/README.md)를 참고하세요.
+
+## 8. 미션 요구사항 점검
+
+- Python 3.10 이상, 표준 라이브러리만 사용: 충족합니다. 제출된 버전 캡처에는 Python 3.14.10이 표시됩니다.
+- `Quiz`, `QuizGame` 두 클래스와 기능별 함수, 메뉴, 퀴즈 추가/목록/점수/종료: 구현되어 있습니다.
+- `state.json` UTF-8 저장 및 재실행 후 유지: 구조와 기존 재실행 캡처에서 확인됩니다. 현재 파일에는 문제 9개와 최고 점수 7이 저장되어 있습니다.
+- 직접 작성한 퀴즈 5개 이상: 현재 저장된 문제는 9개지만, 기본 문제 8개와 추가 캡처로 확인되는 1개입니다. 직접 작성한 문제가 5개 이상임을 보여주는 증거는 더 필요합니다.
+- 잘못된 입력, Ctrl+C/EOF, 파일 없음/손상 처리: 코드에 처리 흐름이 있습니다. 각 예외 상황의 별도 실행 증거는 아직 일부 빠져 있습니다.
+- Git: 저장소 원격과 feature 브랜치, clone/pull 기록은 있습니다. 현재 feature 브랜치에 main을 병합한 기록은 있으나, 과제에서 요구한 feature를 main으로 병합한 기록과 최신 변경 push는 별도로 확인해야 합니다.
+
+전체 Git 절차는 [docs/GIT_WORKFLOW.md](docs/GIT_WORKFLOW.md)에 정리되어 있습니다.
