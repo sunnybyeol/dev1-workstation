@@ -96,12 +96,13 @@ dev1-workstation/
 - 퀴즈 풀이: [play.png](docs/screenshots/play.png)
 - 퀴즈 추가: [add-quiz.png](docs/screenshots/add-quiz.png)
 - 퀴즈 목록: [quiz-list.png](docs/screenshots/quiz-list.png)
-- 점수 확인: [score.png](docs/screenshots/score.png), [restart-persistence.png](docs/screenshots/restart-persistence.png)
+- 점수 확인: [score.png](docs/screenshots/score.png)
+- 문제 삭제 : [quiz-del.png](docs/screenshots/quiz-del.png)
+- 종료 후 재실행, 삭제된 문제 확인 : [restart-persistence.png](docs/screenshots/restart-persistence.png)
 - 잘못된 입력: [quiz-error.png](docs/screenshots/quiz-error.png) 
 - Git 브랜치/clone/pull: [branchlist.png](docs/screenshots/branchlist.png), [clone.png](docs/screenshots/clone.png), [clonelist.png](docs/screenshots/clonelist.png), [pull.png](docs/screenshots/pull.png)
 - 개발 환경: [2version.png](docs/screenshots/2version.png)
 
-문제 삭제와 삭제 후 재실행 화면 캡처는 아직 없습니다. 캡처 체크리스트는 [docs/screenshots/README.md](docs/screenshots/README.md)를 참고하세요.
 
 ## 8. 미션 요구사항 점검
 
