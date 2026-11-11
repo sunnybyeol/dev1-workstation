@@ -70,7 +70,6 @@ dev1-workstation/
 └── docs/
     ├── GIT_WORKFLOW.md       # 브랜치, 커밋, clone/pull 제출 절차
     ├── WORK_LOG.md           # 실행·검증 증거 기록 안내
-    ├── 미션_목표_설명.hwp     # 과제 목표와 요구사항 설명
     └── screenshots/
         └── README.md         # 실제 화면 캡처 체크리스트
 ```
