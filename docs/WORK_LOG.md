@@ -1,16 +1,13 @@
-# 실행 기록 작성 가이드
+# 실행·제출 증거 안내
 
-이 파일에는 직접 실행한 명령과 실제 결과를 기록합니다. 아래는 기록 대상 목록입니다.
+이 폴더의 캡처는 실제 PowerShell 실행 화면이며, 명령의 원문 출력은 프로젝트 루트의 `logs/`에 텍스트로 기록합니다.
 
-| 실행 내용 | 기록할 실제 증거 |
+| 평가 내용 | 증거 |
 |---|---|
-| Python 버전 | `py --version` 또는 `python3 --version` 출력 |
-| 메뉴 실행 | `py -X utf8 main.py`를 실행한 메뉴 화면 캡처 |
-| 퀴즈 풀이 | 질문, 답 입력, 정답/오답, 점수 화면 캡처 |
-| 퀴즈 추가/목록 | 문제 등록 성공 안내와 목록 화면 캡처 |
-| 점수 영속성 | 종료 후 재실행해 최고 점수가 남아 있는 화면 |
-| 입력 예외 처리 | 문자 입력, 범위 밖 숫자, Ctrl+C 또는 EOF 처리 화면 |
-| JSON 복구 | 별도 복사본에서 손상 JSON 복구 동작을 확인한 결과 |
-| Git 작업 | `git log --oneline --graph --all`, 브랜치 병합, clone/pull 출력 |
+| 최신 메뉴와 입력 오류 | `screenshots/menu.png`, `screenshots/quiz-error.png`, `../logs/menu-run.txt`, `../logs/input-validation.txt` |
+| 퀴즈 삭제와 재실행 유지 | `screenshots/quiz-del.png`, `screenshots/restart-persistence.png`, `../logs/restart-persistence.txt` |
+| 추가·목록·점수 | `screenshots/add-quiz.png`, `screenshots/quiz-list.png`, `screenshots/score.png` |
+| Git 원격, 커밋 수, 브랜치·병합 | `../logs/git-evidence.txt` |
+| clone/pull | `screenshots/clone.png`, `screenshots/clonelist.png`, `screenshots/pull.png` |
 
-실행 화면은 `docs/screenshots/`에 저장하고, Git 명령은 실제 출력과 함께 README 또는 별도 로그에 기록합니다. 토큰/비밀번호는 기록하지 않습니다.
+로그에는 명령, 실행 시각(한국 시간), 목적, 실제 출력과 종료 코드를 기록합니다. 자격 증명이나 계정 이메일은 로그에 넣지 않습니다.

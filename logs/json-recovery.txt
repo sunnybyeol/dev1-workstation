@@ -1,0 +1,9 @@
+실행 시각: 2026-11-12 15:44:07 +09:00 KST
+목적: 손상된 JSON을 별도 테스트 파일에서 읽어 백업과 기본 문제 복구 확인
+테스트 파일: logs/.corrupt-state-check.json (실행 후 제거)
+실행: storage.load_game(test_path)
+결과:
+state.json could not be read (Expecting property name enclosed in double quotes: line 1 column 3 (char 2)); starter quizzes were loaded. A copy was saved as .corrupt-state-check.corrupt-20261112-154407.json.
+기본 문제 수: 8
+백업 생성: PASS (.corrupt-state-check.corrupt-20261112-154407.json)
+실제 프로젝트 state.json 변경: 없음

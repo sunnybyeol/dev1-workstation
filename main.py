@@ -14,7 +14,7 @@ def ask(prompt: str) -> str:
     try:
         return input(prompt).strip()
     except (KeyboardInterrupt, EOFError) as error:
-        print("\n입력이 종료되어 진행 상황을 저장하고 프로그램을 닫습니다.")
+        print("\n입력이 종료되어 프로그램을 안전하게 닫습니다.")
         raise ExitRequested from error
 
 
@@ -122,10 +122,29 @@ def show_score(game: QuizGame) -> None:
 
 def run() -> None:
     game, warning = load_game()
+    save_on_exit = True
     if warning:
         print(warning)
-    # 첫 실행에서도 state.json이 생성되도록 기본 상태를 저장합니다.
-    save_game(game)
+        if "The damaged file could not be copied." in warning:
+            save_on_exit = False
+            print("손상 파일의 백업을 만들지 못했습니다. 원본을 보존하려면 2번을 선택하세요.")
+            print("1. 기본 문제로 초기화하고 state.json 덮어쓰기")
+            print("2. 종료하고 state.json 직접 복구")
+            try:
+                recovery_choice = ask_number("복구 방법 선택 (1-2): ", 1, 2)
+            except ExitRequested:
+                print("state.json을 변경하지 않고 종료합니다. 파일을 직접 복구한 뒤 다시 실행하세요.")
+                print("게임을 종료합니다.")
+                return
+            if recovery_choice == 1:
+                save_on_exit = True
+            else:
+                print("state.json을 변경하지 않고 종료합니다. 파일을 직접 복구한 뒤 다시 실행하세요.")
+                return
+
+    # 첫 실행에서 기본 상태를 선택한 경우에도 종료 시 state.json을 생성합니다.
+    if save_on_exit:
+        save_game(game)
 
     actions = {
         1: lambda: play_quiz(game),
@@ -146,11 +165,14 @@ def run() -> None:
     except ExitRequested:
         pass
     finally:
-        try:
-            save_game(game)
-            print(f"진행 상황을 {STATE_PATH.name}에 저장했습니다.")
-        except OSError as error:
-            print(f"저장하지 못했습니다: {error}")
+        if save_on_exit:
+            try:
+                save_game(game)
+                print(f"진행 상황을 {STATE_PATH.name}에 저장했습니다.")
+            except OSError as error:
+                print(f"저장하지 못했습니다: {error}")
+        else:
+            print("손상된 state.json은 저장하지 않았습니다.")
 
     print("게임을 종료합니다.")
 

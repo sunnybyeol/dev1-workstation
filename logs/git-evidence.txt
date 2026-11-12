@@ -1,0 +1,75 @@
+실행 시각: 2026-11-12 15:48:44 +09:00 KST
+작업 폴더: C:\dev\dev1-workstation
+목적: 원격, 커밋 수, 브랜치, 기능 브랜치 병합 기록 제출
+
+[원격 저장소] git remote -v
+종료 코드: 0
+--- 실제 출력 ---
+origin	https://github.com/sunnybyeol/dev1-workstation.git (fetch)
+origin	https://github.com/sunnybyeol/dev1-workstation.git (push)
+
+[브랜치 목록] git branch -a
+종료 코드: 0
+--- 실제 출력 ---
+  feature/quiz-help
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/feature/quiz-help
+  remotes/origin/main
+
+[main 커밋 수] git rev-list --count main
+종료 코드: 0
+--- 실제 출력 ---
+30
+
+[최근 10개 커밋] git log -10 --oneline --decorate main
+종료 코드: 0
+--- 실제 출력 ---
+5b40022 (HEAD -> main) Add mission verification logs and evidence
+e258c4f Merge feature/quiz-help into main
+0572c4b Add mission objective guide
+be316df (origin/feature/quiz-help, feature/quiz-help) Merge origin/main into feature/quiz-help
+bba0bb3 Add quiz deletion and mission evidence
+e85d469 (origin/main, origin/HEAD) Update README.md
+0b5a335 Update README.md
+64a555a Revise screenshot checklist in README.md
+b328d39 Update README.md for screenshot checklist
+cc6c1b3 Update README.md
+
+[전체 브랜치 병합 그래프] git log --oneline --graph --decorate --all -16
+종료 코드: 0
+--- 실제 출력 ---
+* 5b40022 (HEAD -> main) Add mission verification logs and evidence
+*   e258c4f Merge feature/quiz-help into main
+|\  
+| *   be316df (origin/feature/quiz-help, feature/quiz-help) Merge origin/main into feature/quiz-help
+| |\  
+| * | bba0bb3 Add quiz deletion and mission evidence
+| * |   d40c909 Merge origin/main into feature/quiz-help
+| |\ \  
+| * | | 2a58aab Add quiz workflow evidence
+| * | | d491d6f docs: add quiz usage help
+* | | | 0572c4b Add mission objective guide
+| |_|/  
+|/| |   
+* | | e85d469 (origin/main, origin/HEAD) Update README.md
+* | | 0b5a335 Update README.md
+* | | 64a555a Revise screenshot checklist in README.md
+* | | b328d39 Update README.md for screenshot checklist
+* | | cc6c1b3 Update README.md
+* | | c4f9d43 Update README.md
+| |/  
+|/|   
+* | 5f0e757 Revise README with project overview and instructions
+* | ce28160 Update README.md
+
+[feature/quiz-help가 main에 포함되는지] git merge-base --is-ancestor feature/quiz-help main
+종료 코드: 0
+결과: PASS - feature 브랜치가 main 이력에 포함됨
+
+[현재 작업 상태] git status -sb
+종료 코드: 0
+--- 실제 출력 ---
+## main...origin/main [ahead 8]
+ M __pycache__/quiz_game.cpython-314.pyc
+ M __pycache__/storage.cpython-314.pyc

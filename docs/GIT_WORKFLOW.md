@@ -7,7 +7,7 @@ GitHub에서 공개 저장소 `dev1-workstation`을 생성합니다. README와 .
 Set-Location C:\dev\dev1-workstation
 git init -b main
 git config user.name "sunnybyeol"
-git config user.email "witch_jh@naver.com"
+git config user.email "your-email@example.com"
 git add README.md .gitignore main.py quiz_game.py storage.py state.json docs
 git commit -m "chore: create Python quiz project"
 git remote add origin https://github.com/sunnybyeol/dev1-workstation.git
@@ -33,6 +33,8 @@ git push -u origin main
 각 커밋은 해당 작업을 실제로 한 뒤 파일 변경을 포함해야 합니다. 실제 커밋 수는 `git rev-list --count HEAD`로 확인합니다.
 
 ## 3. 브랜치 생성과 병합
+
+`feature/` 브랜치는 한 가지 변경을 main 작업과 나누어 개발하고 검토한 뒤 합치기 위해 사용합니다.
 
 ```powershell
 git switch -c feature/quiz-help
@@ -68,5 +70,6 @@ git pull origin main
 git log -1 --oneline
 ```
 
-[실행 화면](docs/screenshots/clone.png")
-clone 경로, pull 전후 상태와 실제 출력, 브랜치 병합 그래프를 제출용 README 또는 `docs/`의 기록에 추가합니다.
+[Clone 실행 화면](screenshots/clone.png), [pull 실행 화면](screenshots/pull.png)
+
+현재 실제 브랜치·원격·커밋 수와 병합 그래프는 `../logs/git-evidence.txt`에 기록합니다. 화면 캡처 `branchlist.png`는 예전 상태이므로 최신 병합 판단에는 이 로그를 사용합니다.
